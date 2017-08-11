@@ -1,4 +1,21 @@
 <?php
+/**
+*Clase Contacto
+*Esta clase extiende de CI_Controler, y funciona como controlaor para las vistas back-end pertenecientes a la gestión
+*de comentarios.
+*Se hace uso de métodos propios y la libreria GROCERY CRUD creada por John Skoumbourdis <scoumbourdisj@gmail.com>
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.1
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Contacto.php
+*@author Alejandro Onofre Cornejo
+*@since 0.1
+*/
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Contacto extends CI_Controller {
