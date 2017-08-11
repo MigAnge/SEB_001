@@ -1,4 +1,20 @@
 <?php
+/**
+*Clase Reportes
+*Esta clase extiende de CI_Controler, y funciona como controlaor para la creacion de reportes
+*Se hace uso de la libreria mPDF creada por Ian Back <ianb@bpm1.com> 
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.1
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Reportes.php
+*@author Alejandro Onofre Cornejo
+*@since 0.1
+*/
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
