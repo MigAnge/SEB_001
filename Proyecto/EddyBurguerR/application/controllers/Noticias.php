@@ -16,8 +16,9 @@ class Noticias extends CI_Controller{
     $ofertas_crud->set_table('ofertas');
 $ofertas_crud->field_type('texto','text');
     $ofertas_crud->unset_textEditor('texto');
-    $ofertas_crud->set_rules('titulo', 'título', 'trim|min_length[5]|max_length[100]');
-    $ofertas_crud->set_rules('texto', 'texto', 'trim|min_length[5]|max_length[100]');
+    $ofertas_crud->set_rules('titulo', 'título', 'trim|min_length[5]|max_length[100]|required');
+    $ofertas_crud->set_rules('texto', 'texto', 'trim|min_length[5]|max_length[100]|required');
+    $ofertas_crud->set_rules('botonText', 'Texto del botón', 'trim|min_length[5]|max_length[100]|required');
     //required fields to add and edit records
     $ofertas_crud->required_fields('urlImagen', 'titulo', 'texto');
     $ofertas_crud->columns('urlImagen', 'titulo', 'texto', 'botonText', 'fecha', 'Empleado_idEmpleado');
@@ -27,6 +28,8 @@ $ofertas_crud->field_type('texto','text');
     $ofertas_crud->display_as('texto', 'Descripción de la oferta');
     $ofertas_crud->display_as('botonText', 'Texto del botón');
     $ofertas_crud->display_as('Empleado_idEmpleado', 'Registrado por:');
+    $Empleado_idEmpleado = $this->session->userdata('id');
+    $ofertas_crud->field_type('Empleado_idEmpleado', 'hidden', $Empleado_idEmpleado);
 
 //campos automaticos para agregar
     $ofertas_crud->callback_add_field('fecha', function(){
@@ -53,7 +56,6 @@ $ofertas_crud->field_type('texto','text');
     $ofertas_crud->set_language('spanish');
 
     //vincular tablas
-    $ofertas_crud->set_relation('Empleado_idEmpleado', 'empleado', 'nombre');
 
     //imagenes
     $ofertas_crud->set_field_upload('urlImagen', 'uploads/galeria', 'jpg','png','jpeg');

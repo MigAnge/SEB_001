@@ -172,6 +172,9 @@ class Productos extends CI_Controller{
     $data['title']= "Comprobar información";
 	  $data['pag']= "Comprobar información";
     $data['datosUsuario'] = $datosUsuario;
+    if(!$this->session->userdata('name')){
+      redirect(base_url().'index.php/Welcome/loginV','refresh');
+    }
     $this->load->view("eddy/Productos/infoPedido",$data);
   }
 
