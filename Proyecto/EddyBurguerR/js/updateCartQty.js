@@ -11,7 +11,6 @@ $(document).ready(function() {
             success: function(r) {
                 if (r == "Actualizado") {
                     cantidad.val(cantidad.val());
-                    alert('Actualizado');
                 } else {
                     alert("error");
                 }
