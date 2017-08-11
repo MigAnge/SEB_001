@@ -1,11 +1,19 @@
 <?php
+/**
+*Clase Eddy
+*Esta clase extiende de CI_Controler, y funciona como controlaor acceder al panel de control
+*/
 
 /**
- * Created by PhpStorm.
- * User: alex
- * Date: 18/11/16
- * Time: 04:55 PM
- */
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.2
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Eddy.php
+*@author Alejandro Onofre Cornejo
+*@since 0.1
+*/
 class Eddy extends CI_Controller
 {
 
