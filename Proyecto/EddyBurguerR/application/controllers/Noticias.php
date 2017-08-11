@@ -1,5 +1,21 @@
-
 <?php
+/**
+*Clase Noticias
+*Esta clase extiende de CI_Controler, y funciona como controlaor para las vistas back-end pertenecientes a las ofertas (Noticias)
+*Se hace uso de la libreria GROCERY CRUD creada por John Skoumbourdis <scoumbourdisj@gmail.com>
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.2
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Noticias.php
+*@author Raul Ugarte Ramos
+*@since 0.1
+*/
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Noticias extends CI_Controller{
@@ -77,85 +93,4 @@ $ofertas_crud->field_type('texto','text');
         redirect(base_url(),'refresh');
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-  function addNoticias(){
-    $data['uf'] = true;
-    $this->load->view('eddy/Noticias/addNoticias', $data);
-  }
-
-  function saveNoticias(){
-    $data['upload_path'] = 'uploads/noticias/';
-    $data['allowed_types'] = 'gif|jpg|png|jpeg';
-
-    $this->load->library('upload', $data);
-
-    if(!$this->upload->do_upload("imagen")){
-      $data['error'] = $this->upload->display_errors();
-      $this->load->view('eddy/Noticias/addNoticias', $data);
-    }else{
-      $file_info = $this->upload->data();
-      $imagen = $data['upload_path'].$file_info['file_name'];
-      $titulo = $this->input->post('titulo');
-      $texto = $this->input->post('texto');
-      
-      $this->Noticiasm->saveNoticias($imagen, $titulo, $texto);
-      redirect('Noticias/noticias');
-    }
-  }
-
-  function noticiasEdit($idNoticia){
-    $data['noticiasEdit'] = $this->Noticiasm->NoticiasEdit($idNoticia);
-    $data['uf'] = true;
-    $this->load->view('eddy/Noticias/noticiasEdit', $data);
-  }
-
-  function updateNoticias(){
-    $imagen =$_FILES['imagen']['type'];
-
-    if($imagen != null){
-      $data['upload_path'] = 'uploads/noticias/';
-      $data['allowed_types'] = 'gif|jpg|png|jpeg';
-
-      $this->load->library('upload', $data);
-
-      if(!$this->upload->do_upload("imagen")){
-        $data['error'] = $this->upload->display_errors();
-        $this->load->view('eddy/Noticias/noticias', $data);
-      }else{
-        $file_info = $this->upload->data();
-        $imagen = $data['upload_path'].$file_info['file_name'];
-        $idProducto = $this->input->post('idNoticia');
-        $titulo = $this->input->post('titulo');
-        $texto = $this->input->post('texto');
-        $imagenActual = $this->input->post('imagenActual');
-        unlink($imagenActual);
-        $this->Noticiasm->updateNoticias($idNoticia, $imagen, $titulo, $texto);
-        redirect('Noticias/noticias');
-      }
-    }else{
-      $imagen = "";
-      $idNoticia = $this->input->post('idNoticia');
-      $titulo = $this->input->post('titulo');
-      $texto = $this->input->post('texto');
-      $this->Noticiasm->updateNoticias($idNoticia, $imagen, $titulo, $texto);
-    redirect('Noticias/noticias');
-    }
-  }
-
-  function noticiasDelete($idNoticia){
-    $this->Noticiasm->noticiasDelete($idNoticia);
-    redirect('Noticias/noticias');
-  }
-
 }
