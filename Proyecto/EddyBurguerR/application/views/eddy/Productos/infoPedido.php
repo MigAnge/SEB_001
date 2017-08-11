@@ -85,7 +85,12 @@ $this->load->view('template/nav');
                         </tr>
                 </table>
                   
-                <div style="text-align: right;"><a class="btn btn-primary" href="<?php echo base_url().'/index.php/Pedido/insertPedido/';?>">Finalizar</a></div>
+                <div style="text-align: right;"><a class="btn btn-primary" onClick="mensaje()" href="<?php echo base_url().'/index.php/Pedido/insertPedido/';?>">Finalizar</a></div>
+                <script>
+                    function mensaje(){
+                        alert('tu oedido se ha guardado, el prodúcto lo pagas al recivirlo');
+                    }
+                </script>
            <?php } ?>
             </div>
         </div>
