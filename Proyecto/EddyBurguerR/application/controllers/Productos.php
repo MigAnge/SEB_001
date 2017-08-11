@@ -1,4 +1,22 @@
 <?php
+/**
+*Clase Productos
+*Esta clase extiende de CI_Controler, y funciona como controlaor para las vistas back-end pertenecientes a los prodcuctos
+*Se hace uso de la libreria GROCERY CRUD creada por John Skoumbourdis <scoumbourdisj@gmail.com>
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.2
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Productos.php
+*@author Alejandro Onofre Cornejo
+*@since 0.1
+*/
+
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Productos extends CI_Controller{
@@ -70,32 +88,7 @@ class Productos extends CI_Controller{
 	  $data['pag']= "detalle de producto";
     $this->load->view("detalleProducto", $data);
   }
-/*
-  function addProductos(){
-    $data['uf'] = true;
-    $this->load->view('eddy/Productos/addProductos', $data);
-  }
 
-  function saveProductos(){
-    $data['upload_path'] = 'uploads/productos/';
-    $data['allowed_types'] = 'gif|jpg|png|jpeg';
-
-    $this->load->library('upload', $data);
-
-    if(!$this->upload->do_upload("imagen")){
-      $data['error'] = $this->upload->display_errors();
-      $this->load->view('eddy/Productos/addProductos', $data);
-    }else{
-      $file_info = $this->upload->data();
-      $imagen = $data['upload_path'].$file_info['file_name'];
-      $nombre = $this->input->post('nombre');
-      $texto = $this->input->post('texto');
-      $stock = $this->input->post('stock');
-      $precio = $this->input->post('precio');
-      $this->Productosm->saveProductos($imagen, $nombre, $texto, $stock, $precio);
-      redirect('Productos/productos');
-    }
-  }*/
 
   function addToCart(){
     $idProducto = $this->input->post('idProducto');
@@ -176,55 +169,6 @@ class Productos extends CI_Controller{
       redirect(base_url().'index.php/Welcome/loginV','refresh');
     }
     $this->load->view("eddy/Productos/infoPedido",$data);
-  }
-
-  function productosEdit($idProducto){
-    $data['productosEdit'] = $this->Productosm->productosEdit($idProducto);
-    $data['uf'] = true;
-    $this->load->view('eddy/Productos/productosEdit', $data);
-  }
-
-  function updateProductos(){
-    $imagen =$_FILES['imagen']['type'];
-
-    if($imagen != null){
-      $data['upload_path'] = 'uploads/productos/';
-      $data['allowed_types'] = 'gif|jpg|png|jpeg';
-
-      $this->load->library('upload', $data);
-
-      if(!$this->upload->do_upload("imagen")){
-        $data['error'] = $this->upload->display_errors();
-        $this->load->view('eddy/Productos/productos', $data);
-      }else{
-        $file_info = $this->upload->data();
-        $imagen = $data['upload_path'].$file_info['file_name'];
-        $idProducto = $this->input->post('idProducto');
-        $nombre = $this->input->post('nombre');
-        $texto = $this->input->post('texto');
-        $stock = $this->input->post('stock');
-        $precio = $this->input->post('precio');
-
-        $imagenActual = $this->input->post('imagenActual');
-        unlink($imagenActual);
-        $this->Productosm->updateProductos($idProducto, $imagen, $nombre, $texto, $stock, $precio);
-        redirect('Productos/productos');
-      }
-    }else{
-      $imagen = "";
-      $idProducto = $this->input->post('idProducto');
-      $nombre = $this->input->post('nombre');
-      $texto = $this->input->post('texto');
-      $stock = $this->input->post('stock');
-      $precio = $this->input->post('precio');
-      $this->Productosm->updateProductos($idProducto, $imagen, $nombre, $texto, $stock, $precio);
-    redirect('Productos/productos');
-    }
-  }
-
-  function productosDelete($idProducto){
-    $this->Productosm->productosDelete($idProducto);
-    redirect('Productos/productos');
   }
 
 }
