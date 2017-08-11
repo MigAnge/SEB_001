@@ -1,4 +1,21 @@
 <?php
+/**
+*Clase Empleado
+*Esta clase extiende de CI_Controler, y funciona como controlaor para las vistas back-end pertenecientes a la gestión
+*de empleados.
+*Se hace uso de metodos propios y de la libreria GROCERY CRUD creada por John Skoumbourdis <scoumbourdisj@gmail.com>
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.2
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Empleado.php
+*@author Alejandro Onofre Cornejo
+*@since 0.1
+*/
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
