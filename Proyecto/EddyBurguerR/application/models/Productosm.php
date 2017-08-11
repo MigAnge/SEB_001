@@ -1,4 +1,21 @@
 <?php
+/**
+*Clase Productosm
+*Esta clase extiende de CI_Model, y funciona como modelo para las vistas back-end pertenecientes a la gestión
+*de productos.
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.1
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/models/Productosm.php
+*@author Alejandro Onofre Cornejo
+*@since 0.1
+*/
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Productosm extends CI_Model {
   public function __construct(){
