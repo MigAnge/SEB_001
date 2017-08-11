@@ -1,7 +1,7 @@
 <?php
 /**
-*Clase Welcomo
-*Esta clase extiende de CI_Controler, y funciona como controlaor principal para acceder a las vistas del front-end
+*Clase Welcome
+*Esta clase extiende de CI_Controler, y funciona como controlador principal para acceder a las vistas del front-end
 */
 
 /**
@@ -10,8 +10,9 @@
 *@subpackage controllers
 *@copyright Derechos reservados® Soft-pack
 *@version 0.2
-*@link ruta del archivo en github
-*@author Miguel Angel
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Welcome.php
+*@author Miguel Ángel Franco Ramirez
+*@since 0.2
 */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
