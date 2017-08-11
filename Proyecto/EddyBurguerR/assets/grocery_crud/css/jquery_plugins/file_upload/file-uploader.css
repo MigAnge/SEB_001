@@ -1,0 +1,19 @@
+.qq-upload-button {
+    display:block; /* or inline-block */
+    padding: 7px 15px; 
+    text-align:center;
+	border:1px solid #169F85!important;
+	color: #fff!important;
+	border-radius: 10px;
+	float:left;
+	
+	background: #26B99A;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
+	background-image: linear-gradient(top, #cccccc 0%,#eeeeee 60%);		
+}
+.qq-upload-button:hover {
+	  background: #169F85;
+	 
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbbbbb', endColorstr='#dddddd',GradientType=0 );
+}
+.qq-upload-button:focus {outline:1px dotted black;}

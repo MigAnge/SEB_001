@@ -1,0 +1,45 @@
+#imagen {
+    position: absolute;
+    left: -9999px;
+}
+
+#imagenN{
+  padding:0.5em;
+  float:left;
+  width: 81%;
+  white-space: nowrap;
+  overflow:hidden;
+}
+
+img.imgSliderEdit{
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+img.img-t{
+	width: 25%;
+	padding-top: 2%;
+}
+
+span.text-titleEddy{
+	color: #ff8c00;
+	font-weight: 700;
+	font-family: cursive;
+	font-size: 20px;
+}
+
+body.nav-sm>div>div>div>div>div>a>i>img.img-t{
+	padding-top: 2%;
+	width: 90%!important;
+}
+
+.align{
+	text-align: center;
+	width: 100%;
+}
+
+.tama{
+	font-size: 50px;
+	width: 100%;
+}
+
