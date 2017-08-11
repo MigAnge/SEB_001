@@ -1,4 +1,20 @@
 <?php
+/**
+*Clase Categoria
+*Esta clase extiende de CI_Controler, y funciona como controlaor para las vistas back-end pertenecientes a las categorias
+*Se hace uso de la libreria GROCERY CRUD creada por John Skoumbourdis <scoumbourdisj@gmail.com>
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.1
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Categoria.php
+*@author Raul Ugarte Ramos
+*@since 0.1
+*/
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
