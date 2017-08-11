@@ -1,4 +1,20 @@
 <?php
+/**
+*Clase Slider
+*Esta clase extiende de CI_Controler, y funciona como controlaor para la gestión del slider
+*/
+
+/**
+*@category EddyBurguer
+*@package EddyBurguerR
+*@subpackage controllers
+*@copyright Derechos reservados® Soft-pack
+*@version 0.2
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Slider.php
+*@author Alejandro Onofre Cornejo
+*@since 0.2
+*/
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Slider extends CI_Controller{
