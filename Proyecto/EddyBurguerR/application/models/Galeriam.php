@@ -11,7 +11,7 @@
 *@subpackage controllers
 *@copyright Derechos reservados® Soft-pack
 *@version 0.1
-*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/models/Contactom.php
+*@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/models/Galeriam.php
 *@author Alejandro Onofre Cornejo
 *@since 0.1
 */
