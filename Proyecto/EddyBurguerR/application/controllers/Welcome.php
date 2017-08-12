@@ -20,10 +20,8 @@ class Welcome extends CI_Controller {
 public function __construct(){
 	parent::__construct();
 	$this->load->model('Sliderm');
-	$this->load->model('Galeriam');
 	$this->load->model('Productosm');
 	$this->load->model('Usuariosm');
-    $this->load->model('Noticiasm');
 }
 	public function index(){
 		$data['slider'] = $this->Sliderm->sliderList();
