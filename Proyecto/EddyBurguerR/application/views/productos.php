@@ -1,4 +1,19 @@
 <?php
+/**
+ * Lista los productos disponibles
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.1.0
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/productos.php
+ *@since File available since Release 0.1.0
+*/
+
+
+
 $agregado = $this->session->flashdata('agregado');
 $destruido = $this->session->flashdata('destruido');
 $productoEliminado = $this->session->flashdata('productoEliminado');

@@ -1,3 +1,18 @@
+<?php
+/**
+ * Footer de las vistas front-end
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.1.0
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/template/footer.php
+ *@since File available since Release 0.0.1
+*/
+
+?>
 <div id="footerOuterSeparator"></div>
 
 <div id="divFooter" class="footerArea">

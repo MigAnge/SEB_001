@@ -1,3 +1,18 @@
+<?php
+/**
+ * plantilla para reporte pedido
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.0.1
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/eddy/Reporte/reporte.php
+ *@since File available since Release 0.0.1
+*/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

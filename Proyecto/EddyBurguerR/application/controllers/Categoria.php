@@ -10,10 +10,11 @@
 *@package EddyBurguerR
 *@subpackage controllers
 *@copyright Derechos reservados® Soft-pack
-*@version 0.1
+*@version  0.1.0
 *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Categoria.php
 *@author Raul Ugarte Ramos
-*@since 0.1
+*@since Class available since Release 0.1.0
+*@deprecated Class deprecated in Release 2.0.0
 */
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -34,7 +35,7 @@ private $id;
     $categoria->field_type('descripcion','text');
     $categoria->unset_textEditor('descripcion');
     $categoria->set_rules('descripcion','descripción','trim|max_length[300]');
-    $categoria->set_rules('nombre','nombre','trim|min_length[5]');
+    $categoria->set_rules('nombre','nombre','trim|min_length[3]');
     $output_categoria = $categoria->render();
 
     

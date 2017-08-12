@@ -10,10 +10,11 @@
 *@package EddyBurguerR
 *@subpackage controllers
 *@copyright Derechos reservados® Soft-pack
-*@version 0.1
+*@version Release: @package_version@
 *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/models/Galeriam.php
 *@author Alejandro Onofre Cornejo
-*@since 0.1
+*@since Class available since Release 0.1.0
+*@deprecated Class deprecated in Release 2.0.0
 */
 
 

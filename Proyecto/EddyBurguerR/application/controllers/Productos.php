@@ -10,10 +10,11 @@
 *@package EddyBurguerR
 *@subpackage controllers
 *@copyright Derechos reservados® Soft-pack
-*@version 0.2
+*@version  0.1.0
 *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Productos.php
 *@author Alejandro Onofre Cornejo
-*@since 0.1
+*@since Class available since Release 0.1.0
+*@deprecated Class deprecated in Release 2.0.0
 */
 
 
@@ -48,8 +49,8 @@ class Productos extends CI_Controller{
 
     $producto_crud->set_rules('nombre', 'nombre', 'trim|max_length[150]|min_length[5]');
     $producto_crud->set_rules('descripcion', 'descripción', 'trim|max_length[300]|min_length[5]');
-    $producto_crud->set_rules('precio', 'precio', 'trim|max_length[300]|min_length[5]');
-    $producto_crud->set_rules('stock', 'stock', 'trim|max_length[300]|min_length[5]');
+    $producto_crud->set_rules('precio', 'precio', 'trim|max_length[300]|min_length[1]');
+    $producto_crud->set_rules('stock', 'stock', 'trim|max_length[300]|min_length[1]');
     $producto_crud->set_rules('Categoria_idCategoria', 'Categoria', 'trim|required');
     $producto_crud->set_rules('Marca:idMarca', 'Marca', 'trim|required');
 

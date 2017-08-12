@@ -1,5 +1,16 @@
 <?php
-
+/**
+ * vista carito para mostrar los productos que ha agregado el usuario
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.0.1
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/eddy/Productos/carrito.php
+ *@since File available since Release 0.0.1
+*/
 
 $agregado = $this->session->flashdata('agregado');
 $destruido = $this->session->flashdata('destruido');

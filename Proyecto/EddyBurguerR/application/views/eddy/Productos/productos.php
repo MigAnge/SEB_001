@@ -1,3 +1,18 @@
+<?php
+/**
+ * vista producto
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.1.0
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/eddy/Productos/productos.php
+ *@since File available since Release 0.0.1
+*/
+
+?>
 <div class="right_col" role="main" style="min-height: 3124px;">
           <div class="">
             <div class="page-title">

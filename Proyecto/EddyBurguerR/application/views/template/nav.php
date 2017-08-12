@@ -1,3 +1,18 @@
+<?php
+/**
+ * navbar de las paginas front-end
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.1.0
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/template/contacto.php
+ *@since File available since Release 0.0.1
+*/
+
+?>
 <body id="pageBody">
 
 <div id="decorative2">
@@ -27,7 +42,7 @@
                                             <li class="dropdown <?php if(isset($title)){if($title == 'instalaciones'){echo 'active';}}?>"><a href="<?php echo base_url();?>index.php/Welcome/paginas/instalaciones">Instalaciones</a></li>
                                         </ul>
                                     </li>
-                                   <li class="dropdown <?php if(isset($title)){if($title == 'productos'){echo 'active';}}?>"><a href="<?php echo base_url();?>index.php/Welcome/paginas/productos">Prodúctos</a></li>
+                                   <li class="dropdown <?php if(isset($title)){if($title == 'productos'){echo 'active';}}?>"><a href="<?php echo base_url();?>index.php/Welcome/paginas/productos">Productos</a></li>
                                     <!--<li class="dropdown">
                                         <a href="page.html" class="dropdown-toggle">Page <b class="caret"></b></a>
                                         <ul class="dropdown-menu">

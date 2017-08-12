@@ -9,10 +9,11 @@
 *@package EddyBurguerR
 *@subpackage controllers
 *@copyright Derechos reservados® Soft-pack
-*@version 0.2
+*@version 0.1.0
 *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/controllers/Welcome.php
 *@author Miguel Ángel Franco Ramirez
-*@since 0.2
+*@since Class available since Release 0.1.0
+*@deprecated Class deprecated in Release 2.0.0
 */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -20,6 +21,7 @@ class Welcome extends CI_Controller {
 public function __construct(){
 	parent::__construct();
 	$this->load->model('Sliderm');
+	$this->load->model('Galeriam');
 	$this->load->model('Productosm');
 	$this->load->model('Usuariosm');
 }

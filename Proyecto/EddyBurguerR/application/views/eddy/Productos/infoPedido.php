@@ -1,4 +1,19 @@
-<?php 
+<?php
+/**
+ * muestra información previa la registro del pedido
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.0.1
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/eddy/Productos/infoPedido.php
+ *@since File available since Release 0.0.1
+*/
+
+
+
 if(!$this->session->userdata('login')){
  
  redirect(base_url().'index.php/Welcome/loginV','refresh');

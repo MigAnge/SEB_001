@@ -1,3 +1,18 @@
+<?php
+/**
+ * Se muestra informacion referente a
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.1.0
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/instalaciones.php
+ *@since File available since Release 0.0.1
+*/
+
+?>
 <div class="container">
 <div class="divPanel page-content">
 

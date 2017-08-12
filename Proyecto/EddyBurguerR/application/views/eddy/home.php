@@ -1,3 +1,18 @@
+<?php
+/**
+ * Pagina inicial del cpanel
+ *
+ *  
+ *@category EddyBurguer
+ *@package EddyBurguerR
+ *@subpackage views
+ *@copyright Derechos reservados® Soft-pack 
+ *@version 0.1.0
+ *@link https://github.com/MigAnge/SEB_001/blob/master/Proyecto/EddyBurguerR/application/views/eddy/home.php
+ *@since File available since Release 0.0.1
+*/
+
+?>
 <div class="right_col" role="main">
   <div class="row">
     <div class="col-xs-12 col-sm-12">
