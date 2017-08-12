@@ -1,7 +1,7 @@
 <?php
 /**
-*Clase Contactom
-*Esta clase extiende de CI_Model, y funciona como modelo para las vistas back-end pertenecientes a la gestión
+*Clase Galeriam
+*Esta clase extiende de CI_Model, y funciona como modelo para las vistas front end pertenecientes a la gestión
 *de comentarios.
 */
 
